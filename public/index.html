@@ -61,13 +61,15 @@
       padding: .5rem 1rem;
       font-size: 14px;
     }
-    .content li{
+
+    .content li {
       padding: .5rem;
     }
 
-    li a{
+    li a {
       color: #555;
     }
+
     footer {
       padding: 3rem 1rem;
       font-size: 14px;
@@ -153,13 +155,13 @@
     <div class="content">
       <h2>How to Use AnB</h2>
       <hr>
-      <p><b>Base URL :</b> https://your-service.onrender.com</p>
+      <p><b>Base URL :</b> <span id="bs-url">https://your-service.onrender.com </span> </p>
 
       <p>You can access the API via tools like Postman, curl, or connect directly from your frontend app hosted on
         Vercel.</p>
 
       <b>JavaScript :</b> <br>
-      <code>
+      <code id="code">
         fetch("https://your-api-service.onrender.com/api/posts") <br>
         .then(res=>res.json()) <br>
         .then(data=>console.log(data));
@@ -180,11 +182,13 @@
 
       <ul>
         <li>Full API docs coming soon...</li>
-        <li>Need help? <a href="http://" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
-        <li>Open an issue in the <a href="http://" target="_blank" rel="noopener noreferrer">GitHub Repository</a> </li>
+        <li>Need help? <a href="https://www.linkedin.com/in/rjd06" target="_blank" rel="noopener noreferrer">Contact
+            Us</a></li>
+        <li>Open an issue in the <a href="https://github.com/beingrajdevyadav/node-backend" target="_blank"
+            rel="noopener noreferrer">GitHub Repository</a> </li>
       </ul>
 
-       <h2>Acknowledgements</h2>
+      <h2>Acknowledgements</h2>
       <hr>
 
       <p>Thanks for using <b>AnB APIs</b> backend.</p>
@@ -192,13 +196,32 @@
       <p>Happy Coding!</p>
     </div>
 
-   
+
   </div>
   <footer>
-    <p>AnB Powered By <a href="https://" target="_blank" rel="noopener noreferrer">Rajdev Yadav</a> .</p>
+    <p>AnB Powered By <a href="https://www.linkedin.com/in/rjd06" target="_blank" rel="noopener noreferrer">Rajdev
+        Yadav</a> .</p>
 
-    <p>All Rights Reserved &copy; 2025.</p>
+    <p>All Rights Reserved &copy; <span id="year"></span>.</p>
   </footer>
+
+
+  <!-- javascript -->
+  <script>
+    const fulUrl = window.location.href;
+
+    const bsTag = document.getElementById("bs-url");
+    bsTag.textContent = fulUrl;
+
+    document.getElementById("code").innerHTML = `
+ fetch("${fulUrl}/api/posts") <br>
+        .then(res=>res.json()) <br>
+        .then(data=>console.log(data));
+`;
+
+const date = new Date();
+document.getElementById("year").textContent = date.getFullYear();
+  </script>
 </body>
 
 </html>
