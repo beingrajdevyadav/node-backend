@@ -18,40 +18,26 @@
 
     body {
       color: #333;
-      background-color: #fff;
+      background-color: #f1f1f1;
       font-family: 'Poppins', sans-serif;
 
     }
 
-    /* Utility Classes */
 
 
 
     header {
       padding: 2rem 1rem;
       box-shadow: 0 2px 40px #0000004e;
-      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65 , #04203d);
+      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65, #04203d);
       color: #fff;
-    }
-
-    footer {
-      padding: 3rem 1rem;
-      font-size: 14px;
-      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65 , #04203d);
-      color: #fff;
-      text-align: center;
-      box-shadow: 0 2px 40px #0000004e;
-    }
-
-    footer a {
-      color: #ddd;
     }
 
     .container {
       width: 100%;
       padding: 2rem;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       gap: 2rem;
     }
@@ -61,7 +47,38 @@
     }
 
     .container .content {
-      width: 50%;
+      width: 40%;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .content p {
+      font-size: 14px;
+      padding: .5rem 0;
+    }
+
+    .content ul {
+      padding: .5rem 1rem;
+      font-size: 14px;
+    }
+    .content li{
+      padding: .5rem;
+    }
+
+    li a{
+      color: #555;
+    }
+    footer {
+      padding: 3rem 1rem;
+      font-size: 14px;
+      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65, #04203d);
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 2px 40px #0000004e;
+    }
+
+    footer a {
+      color: #ddd;
     }
   </style>
 </head>
@@ -78,6 +95,7 @@
 
     <div class="content">
       <h2>Welcome to the AnB</h2>
+      <hr>
       <p>A lightweight, fast, and scalable <b>Node.js</b> backend built using <b>Express.js</b> . This project is
         designed to serve as a rubust backend layer, delivering structured JSON responses through multiple API
         endpoints. </p>
@@ -88,8 +106,8 @@
 
   <div class="container">
     <div class="content">
-      <h2>Features</h2>
-
+      <h2>AnB Features</h2>
+      <hr>
       <ul>
         <li>Built with <b>Node.js</b> and <b>Express.js</b> </li>
         <li>RESTful API design</li>
@@ -110,29 +128,35 @@
 
     <div class="content">
       <h2>Available Endpoints</h2>
-      <div class="endpoint">
-        <a href="/api/v1/posts" target="_blank">/api/v1/posts</a>
-      </div>
-      <div class="endpoint">
-        <a href="/api/v1/users" target="_blank">/api/v1/users</a>
-      </div>
-      <div class="endpoint">
-        <a href="/api/v1/products" target="_blank">/api/v1/products</a>
-      </div>
-      <div class="endpoint">
-        <a href="/api/v1/recipes" target="_blank">/api/v1/recipes</a>
-      </div>
+      <hr>
+
+      <ul>
+        <li>
+          <a href="/api/v1/posts" target="_blank">/api/v1/posts</a>
+        </li>
+        <li>
+          <a href="/api/v1/users" target="_blank">/api/v1/users</a>
+        </li>
+        <li>
+          <a href="/api/v1/products" target="_blank">/api/v1/products</a>
+        </li>
+        <li>
+          <a href="/api/v1/recipes" target="_blank">/api/v1/recipes</a>
+        </li>
+      </ul>
     </div>
   </div>
 
 
-  <div class="container">
-    
+  <div class="container ">
+
     <div class="content">
-      <h2>How to Use</h2>
+      <h2>How to Use AnB</h2>
+      <hr>
       <p><b>Base URL :</b> https://your-service.onrender.com</p>
 
-      <p>You can access the API via tools like Postman, curl, or connect directly from your frontend app hosted on Vercel.</p>
+      <p>You can access the API via tools like Postman, curl, or connect directly from your frontend app hosted on
+        Vercel.</p>
 
       <b>JavaScript :</b> <br>
       <code>
@@ -145,6 +169,31 @@
     <img src="./img/undraw_adventure-map_3e4p.svg" alt="">
   </div>
 
+
+  <div class="container">
+
+    <img src="./img/undraw_book-lover_m9n3.svg" alt="">
+
+    <div class="content">
+      <h2>Documentation & Support</h2>
+      <hr>
+
+      <ul>
+        <li>Full API docs coming soon...</li>
+        <li>Need help? <a href="http://" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+        <li>Open an issue in the <a href="http://" target="_blank" rel="noopener noreferrer">GitHub Repository</a> </li>
+      </ul>
+
+       <h2>Acknowledgements</h2>
+      <hr>
+
+      <p>Thanks for using <b>AnB APIs</b> backend.</p>
+      <p>We hope this helps accelerate your frontend development!</p>
+      <p>Happy Coding!</p>
+    </div>
+
+   
+  </div>
   <footer>
     <p>AnB Powered By <a href="https://" target="_blank" rel="noopener noreferrer">Rajdev Yadav</a> .</p>
 
