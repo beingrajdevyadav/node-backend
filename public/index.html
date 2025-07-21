@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnB | Rajdev Yadav</title>
+  <!-- aos animation  -->
+  <!-- In <head> -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
   <!-- css styles  -->
   <style>
@@ -102,7 +106,7 @@
       }
 
       .container {
-        padding:  1rem;
+        padding: 1rem;
         flex-direction: column;
         gap: 1rem;
       }
@@ -133,7 +137,7 @@
   <div class="container">
     <img src="./img/undraw_stars_5pgw.svg" alt="">
 
-    <div class="content">
+    <div class="content" data-aos="fade-up">
       <h2>Welcome to the AnB</h2>
       <hr>
       <p>A lightweight, fast, and scalable <b>Node.js</b> backend built using <b>Express.js</b> . This project is
@@ -144,7 +148,7 @@
     </div>
   </div>
 
-  <div class="container left">
+  <div class="container left" data-aos="fade-up">
     <div class="content">
       <h2>AnB Features</h2>
       <hr>
@@ -162,7 +166,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" data-aos="fade-up">
 
     <img src="./img/undraw_designer_efwz.svg" alt="">
 
@@ -188,7 +192,7 @@
   </div>
 
 
-  <div class="container left">
+  <div class="container left" data-aos="fade-up">
 
     <div class="content">
       <h2>How to Use AnB</h2>
@@ -210,7 +214,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" data-aos="fade-up">
 
     <img src="./img/undraw_book-lover_m9n3.svg" alt="">
 
@@ -236,12 +240,20 @@
 
 
   </div>
-  <footer>
+
+  <footer data-aos="fade-up">
     <p>AnB Powered By <a href="https://www.linkedin.com/in/rjd06" target="_blank" rel="noopener noreferrer">Rajdev
         Yadav</a> .</p>
 
     <p>All Rights Reserved &copy; <span id="year"></span>.</p>
   </footer>
+
+  <!-- aos animation -->
+  <!-- Before </body> -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
   <!-- javascript -->
@@ -252,7 +264,7 @@
     bsTag.textContent = fulUrl;
 
     document.getElementById("code").innerHTML = `
- fetch("baseUrl/api/posts") <br>
+        fetch("baseUrl/api/posts") <br>
         .then(res=>res.json()) <br>
         .then(data=>console.log(data));
 `;
