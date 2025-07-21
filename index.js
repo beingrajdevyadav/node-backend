@@ -62,6 +62,6 @@ app.get('/api/v1/recipes', (req,res)=>{
     });
 })
 
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
     console.log(`http://localhost:${port}`);
 })
