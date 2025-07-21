@@ -2,50 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>node-backend</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnB | Rajdev Yadav</title>
 
-    <!-- css styles  -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  <!-- css styles  -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background-color: #f0f0f0;
-            color: #333;
-            padding: 2rem;
-        }
-    </style>
+    body {
+      color: #333;
+      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+
+    }
+
+    /* Utility Classes */
+
+
+
+    header {
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 40px #0000004e;
+      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65 , #04203d);
+      color: #fff;
+    }
+
+    footer {
+      padding: 3rem 1rem;
+      font-size: 14px;
+      background-image: linear-gradient(to left, #bf334a, #042443, #da4e65 , #04203d);
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 2px 40px #0000004e;
+    }
+
+    footer a {
+      color: #ddd;
+    }
+
+    .container {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .container img {
+      width: 30%;
+    }
+
+    .container .content {
+      width: 50%;
+    }
+  </style>
 </head>
 
+
 <body>
-    <h1>Welcome to the Node Backend</h1>
-    <p>This is a simple Node.js backend application that serves static files and provides API endpoints.</p>    
+
+  <header>
+    <h1>AnB</h1>
+  </header>
+
+  <div class="container">
+    <img src="./img/undraw_stars_5pgw.svg" alt="">
+
+    <div class="content">
+      <h2>Welcome to the AnB</h2>
+      <p>A lightweight, fast, and scalable <b>Node.js</b> backend built using <b>Express.js</b> . This project is
+        designed to serve as a rubust backend layer, delivering structured JSON responses through multiple API
+        endpoints. </p>
+
+      <p>It's perfect for integration with any frontend application - including React, Angular, or mobile platforms.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <h2>Features</h2>
+
+      <ul>
+        <li>Built with <b>Node.js</b> and <b>Express.js</b> </li>
+        <li>RESTful API design</li>
+        <li>Modular route handling</li>
+        <li>JSON-based responses</li>
+        <li>CORS enabled for cross-origin requests</li>
+        <li>Deployed on <b>Render</b> for global accessibility </li>
+      </ul>
+    </div>
+
+    <img src="./img/undraw_remote-worker_0l91.svg" alt="">
+  </div>
 
 
-      <h1>Node Backend API Documentation</h1>
-  <div class="endpoint">
-    <a href="/api/v1/posts" target="_blank">/api/v1/posts</a>
+  <div class="container">
+
+    <img src="./img/undraw_designer_efwz.svg" alt="">
+
+    <div class="content">
+      <h2>Available Endpoints</h2>
+      <div class="endpoint">
+        <a href="/api/v1/posts" target="_blank">/api/v1/posts</a>
+      </div>
+      <div class="endpoint">
+        <a href="/api/v1/users" target="_blank">/api/v1/users</a>
+      </div>
+      <div class="endpoint">
+        <a href="/api/v1/products" target="_blank">/api/v1/products</a>
+      </div>
+      <div class="endpoint">
+        <a href="/api/v1/recipes" target="_blank">/api/v1/recipes</a>
+      </div>
+    </div>
   </div>
-  <div class="endpoint">
-    <a href="/api/v1/users" target="_blank">/api/v1/users</a>
+
+
+  <div class="container">
+    
+    <div class="content">
+      <h2>How to Use</h2>
+      <p><b>Base URL :</b> https://your-service.onrender.com</p>
+
+      <p>You can access the API via tools like Postman, curl, or connect directly from your frontend app hosted on Vercel.</p>
+
+      <b>JavaScript :</b> <br>
+      <code>
+        fetch("https://your-api-service.onrender.com/api/posts") <br>
+        .then(res=>res.json()) <br>
+        .then(data=>console.log(data));
+      </code>
+    </div>
+
+    <img src="./img/undraw_adventure-map_3e4p.svg" alt="">
   </div>
-  <div class="endpoint">
-    <a href="/api/v1/products" target="_blank">/api/v1/products</a>
-  </div>
-  <div class="endpoint">
-    <a href="/api/v1/quotes" target="_blank">/api/v1/quotes</a>
-  </div>
-  <div class="endpoint">
-    <a href="/api/v1/recipes" target="_blank">/api/v1/recipes</a>
-  </div>
+
+  <footer>
+    <p>AnB Powered By <a href="https://" target="_blank" rel="noopener noreferrer">Rajdev Yadav</a> .</p>
+
+    <p>All Rights Reserved &copy; 2025.</p>
+  </footer>
 </body>
 
 </html>
