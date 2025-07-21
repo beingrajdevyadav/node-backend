@@ -2,22 +2,23 @@ import express from "express";
 import cors from "cors";
 import { configDotenv } from "dotenv";
 // Importing data from local files
-import posts from '../data/posts.js';
-import users from '../data/users.js';
-import products from '../data/products.js';
-import quotes from '../data/quotes.js';
-import recipes from '../data/recipes.js';
+import posts from './data/posts.js';
+import users from './data/users.js';
+import products from './data/products.js';
+import quotes from './data/quotes.js';
+import recipes from './data/recipes.js';
 
 configDotenv();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public')); // Serve static files from the public directory
 
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send("Jai Shree Shyam!");
+    res.sendFile(process.cwd() + '/public/index.html'); // Serve the index.html file
 });
 
 // Endpoint to get all posts
