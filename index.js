@@ -5,7 +5,7 @@ import { configDotenv } from "dotenv";
 import posts from './data/posts.js';
 import users from './data/users.js';
 import products from './data/products.js';
-import quotes from './data/quotes.js';
+// import quotes from './data/quotes.js';
 import recipes from './data/recipes.js';
 
 configDotenv();
@@ -47,12 +47,12 @@ app.get('/api/v1/products', (req,res)=>{
 });
 
 // Endpoint to get all quotes
-app.get('/api/v1/quotes', (req,res)=>{
-    res.status(200).json({
-        success: true,
-        quotes
-    });
-});
+// app.get('/api/v1/quotes', (req,res)=>{
+//     res.status(200).json({
+//         success: true,
+//         quotes
+//     });
+// });
 
 // Endpoint to get all recipes
 app.get('/api/v1/recipes', (req,res)=>{
