@@ -131,4 +131,4 @@
     }
   ];
 
-  export default top10Cricketers;
+  export default top10Cricketers; 

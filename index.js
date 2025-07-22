@@ -5,7 +5,11 @@ import { configDotenv } from "dotenv";
 import posts from './data/posts.js';
 import users from './data/users.js';
 import products from './data/products.js';
-
+import top10Richest from "./data/richest10.js";
+import top10BanksIndia from "./data/banks10.js";
+import top10IndianCompanies from "./data/companies10.js";
+import top10StartupsIndia from "./data/startups10.js";
+import top10Cricketers from "./data/cricketers10.js";
 import recipes from './data/recipes.js';
 
 configDotenv();
@@ -46,6 +50,44 @@ app.get('/api/v1/products', (req,res)=>{
     });
 });
 
+
+// Endpoint to get top 10 richest people
+app.get('/api/v1/richest', (req, res) => {
+    res.status(200).json({
+        success: true,
+        top10Richest
+    });
+});
+
+// Endpoint to get top 10 banks in India
+app.get('/api/v1/banks', (req, res) => {
+    res.status(200).json({
+        success: true,
+        top10BanksIndia
+    });
+}   );
+
+// Endpoint to get top 10 Indian companies
+app.get('/api/v1/companies', (req, res) => {
+    res.status(200).json({
+        success: true,
+        top10IndianCompanies
+    });
+});
+// Endpoint to get top 10 startups in India
+app.get('/api/v1/startups', (req, res) => {
+    res.status(200).json({
+        success: true,
+        top10StartupsIndia
+    });
+});
+// Endpoint to get top 10 cricketers
+app.get('/api/v1/cricketers', (req, res) => {
+    res.status(200).json({
+        success: true,
+        top10Cricketers
+    });
+});
 
 
 // Endpoint to get all recipes

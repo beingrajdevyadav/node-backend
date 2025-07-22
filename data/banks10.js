@@ -143,4 +143,4 @@
 ];
 
 
-export default top10BanksIndia;
+export default top10BanksIndia; 

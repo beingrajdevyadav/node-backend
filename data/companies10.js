@@ -134,4 +134,4 @@
     }
   ];
 
-    export default top10IndianCompanies;
+    export default top10IndianCompanies; 

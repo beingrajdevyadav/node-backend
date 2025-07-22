@@ -10,7 +10,7 @@ const top10StartupsIndia = [
       "valuation_usd_billion": 3.6,
       "key_achievements": ["10-minute grocery delivery scale‑up", "Tier‑II city expansion"],
       "notes": "Hyper‑local AI logistics, retained top volume growth in 2025" 
-    },
+    }, 
     {
       "rank": 2,
       "name": "KreditBee",
