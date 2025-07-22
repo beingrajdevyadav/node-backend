@@ -1,5 +1,5 @@
 
-  top10Cricketers = [
+ const top10Cricketers = [
     {
       "rank": 1,
       "name": "Sachin Tendulkar",
