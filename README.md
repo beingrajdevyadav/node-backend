@@ -41,21 +41,21 @@ Base URL: `https://anb-lpmc.onrender.com` or your hosted domain
 
 ## 📁 Project Structure
 
-AnB/
-├── data/
-│ ├── banks10.js
-│ ├── companies10.js
-│ ├── cricketers10.js
-│ ├── posts.js
-│ ├── products.js
-│ ├── recipes.js
-│ ├── richest10.js
-│ └── startups10.js
-├── public/
-│ └── index.html
-├── .env
-├── index.js
-└── package.json
+- AnB/
+- ├── data/
+- │ ├── banks10.js
+- │ ├── companies10.js
+- │ ├── cricketers10.js
+- │ ├── posts.js
+- │ ├── products.js
+- │ ├── recipes.js
+- │ ├── richest10.js
+- │ └── startups10.js
+- ├── public/
+- │ └── index.html
+- ├── .env
+- ├── index.js
+- └── package.json
 
 
 ---
