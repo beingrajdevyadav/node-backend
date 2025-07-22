@@ -1,40 +1,67 @@
-# 🛠️ AnB
+# 🧠 [AnB](https://anb-lpmc.onrender.com) - Public JSON API
 
-A simple Node.js + Express.js backend application that serves JSON data at multiple API endpoints. Deployed on Render.
+AnB is a lightweight public API built with **Node.js** and **Express** that serves various curated datasets via RESTful endpoints. It can be used for educational, testing, or demo purposes.
 
-## 🌐 Live Website
+## 🌟 Features
 
-[https://anb-lpmc.onrender.com](https://anb-lpmc.onrender.com)
+- Public REST API with multiple JSON datasets
+- No authentication required
+- Serve static HTML page (`index.html`)
+- Easy to deploy on platforms like Render or Vercel (for frontend)
 
-## 🚀 Features
+---
 
-- RESTful API endpoints
-- Serves static JSON data
-- Lightweight and fast
-- CORS-enabled
-- Environment variable support via `.env`
+## 🚀 API Endpoints
 
-## 📁 API Endpoints (Examples)
+Base URL: `https://anb-lpmc.onrender.com` or your hosted domain
 
-| Endpoint         | Description                |
-|------------------|----------------------------|
-| `/api/posts`     | Returns list of posts      |
-| `/api/users`     | Returns user information   |
-| `/api/products`  | Returns product details    |
-| `/api/recipes`   | Returns recipe data        |
+| Endpoint                  | Description                              |
+|---------------------------|------------------------------------------|
+| `/`                       | Serves the static homepage (`index.html`)|
+| `/api/v1/posts`           | Get all posts                            |
+| `/api/v1/users`           | Get all users                            |
+| `/api/v1/products`        | Get all products                         |
+| `/api/v1/richest`         | Top 10 richest people in India           |
+| `/api/v1/banks`           | Top 10 banks in India                    |
+| `/api/v1/companies`       | Top 10 successful Indian companies       |
+| `/api/v1/startups`        | Top 10 new successful startups in India  |
+| `/api/v1/cricketers`      | Top 10 successful cricketers of India    |
+| `/api/v1/recipes`         | Get all recipes                          |
+
+---
+
+## 🛠️ Tech Stack
+
+- Node.js
+- Express.js
+- dotenv
+- CORS
+
+---
+
+## 📁 Project Structure
+
+AnB/
+├── data/
+│ ├── banks10.js
+│ ├── companies10.js
+│ ├── cricketers10.js
+│ ├── posts.js
+│ ├── products.js
+│ ├── recipes.js
+│ ├── richest10.js
+│ └── startups10.js
+├── public/
+│ └── index.html
+├── .env
+├── index.js
+└── package.json
 
 
+---
 
-## 🧰 Tech Stack
 
-- **Backend**: Node.js, Express.js
-- **Hosting**: Render
-- **Data Format**: JSON
+## Author
+- **Rajdev Yadav**  
+- [LinkedIn](https://www.linkedin.com/in/rjd06)
 
-## 🛠️ Setup Instructions
-
-1. **Clone the Repository**
-2. 
-   ```bash
-   git clone https://github.com/beingrajdevyadav/node-backend.git
-   cd anb-lpmc
