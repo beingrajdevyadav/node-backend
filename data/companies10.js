@@ -1,5 +1,5 @@
 
-  top10IndianCompanies = [
+ const top10IndianCompanies = [
     {
       "rank": 1,
       "name": "Reliance Industries Limited",
