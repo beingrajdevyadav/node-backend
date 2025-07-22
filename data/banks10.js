@@ -47,7 +47,7 @@
       "name": "Kotak Mahindra Bank",
       "type": "Private",
       "market_cap_inr_lakh_crores": 4.32,
-      "founded_year": 1985 ("pre‑bank"), "as bank": "2003",
+      "founded_year": 1985 , "as bank": "2003",
       "founders": ["Uday Kotak"],
       "headquarters": "Mumbai, Maharashtra",
       "key_people": { "ceo": "Uday Kotak" },
